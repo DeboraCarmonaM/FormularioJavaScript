@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--/Bootstrap-->
+
+    <title>Formulário Cadastro Helpper </title>
+</head>
+<body>
+
+    <div class="container">
+        <!--Formulário de contato-->
+    <form>
+        <div class="form-row pt-3">
+            <div class="form-group col-md-6">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" onkeyup="validaNome()" placeholder="Nome Sobrenome">
+                <div id= "txtNome"> </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="documento">CPF ou CNPJ</label>
+                <input type="text" class="form-control" id="documento" onkeyup="validaDocumento()">
+                <div id= "txtDocumento"> </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" onkeyup="validaEmail()" placeholder="Email">
+                <div id= "txtEmail"> </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="telefone">Telefone</label>
+                <input type="text" class="form-control" id="telefone" onkeyup="validaTelefone()" placeholder="(00) 0000-0000">
+                <div id= "txtTelefone"> </div>
+              </div>
+            <div class="form-group col-md-6">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" id="cep" onkeyup="validaCep()" placeholder="00000-000">
+                <div id= "txtCep"> </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro" onkeyup="validaBairro()" placeholder="Jardim das Árvores">
+                <div id= "txtBairro"> </div>
+              </div>
+          <div class="form-group col-md-6">
+            <label for="logradouro">Logradouro</label>
+            <input type="text" class="form-control" id="logradouro" onkeyup="validaLogradouro()" placeholder="Rua das Rosas">
+            <div id= "txtLogradouro"> </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="numero">Número</label>
+            <input type="text" class="form-control" id="numero" onkeyup="validaNumero()" placeholder="0">
+            <div id= "txtNumero"> </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="cidade">Cidade</label>
+            <input type="text" class="form-control" id="cidade" onkeyup="validaCidade()">
+            <div id= "txtCidade"> </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="estado">Estado</label>
+            <input type="text" class="form-control" id="estado" onkeyup="validaEstado()">
+            <div id= "txtEstado"> </div>
+          </div>
+        </div>
+
+        <!--Botão Enviar-->
+        <button type="submit" class="btn btn-primary" onclick="enviar()" >Enviar</button>
+        <!--/Botão Enviar-->
+
+      </form>
+      <!--/Formulário de contato-->
+
+  
+
+
+    </div>
+
+
+
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS, depois JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
+<script src="formulario.js"></script>
+
+</body>
+</html>
